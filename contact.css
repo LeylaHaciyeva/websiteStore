@@ -1,0 +1,62 @@
+.map-section {
+  background-color: #ecf0f1;
+  padding: 30px 0;
+}
+.map-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+#map {
+  width: 100%;
+  height: 400px;
+}
+.contact-row div {
+  margin-bottom: 10px;
+}
+.contact-row h2 {
+  color: black;
+}
+.contact-row label {
+  color: #acacac;
+  font-size: 15px;
+}
+.contact-row input {
+  border: 1px solid #acacac;
+  outline: none;
+  border-radius: 5px;
+  height: 30px;
+  color: #5c5a5a;
+}
+.contact-row textarea {
+  border: 1px solid #acacac;
+  outline: none;
+  border-radius: 5px;
+  color: #5c5a5a;
+}
+.contact-row button {
+  margin-top: 20px;
+}
+.information-col div{
+    margin-bottom: 20px;
+}
+.information-col .span-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(207, 56, 81);
+}
+.span-icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  color: white;
+}
+.text-span {
+  position: relative;
+  margin-left: 50px;
+  display: block;
+  color: #444242;
+}

@@ -1,0 +1,865 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-top {
+  background-color: #d73a4d;
+  border-bottom: 1px solid #6d6767;
+}
+.header-top-left {
+  display: flex;
+  list-style: none;
+}
+.header-top-left li a {
+  text-decoration: none;
+  color: white;
+}
+.header-top-left .money {
+  margin-right: 20px;
+}
+.header-top-left li ul {
+  list-style: none;
+  display: none;
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  transition: all ease-in 1s;
+}
+.header-top-left li ul li a {
+  text-align: center;
+  color: black;
+  padding-right: 20px;
+}
+.header-top-left li ul li a:hover {
+  background-color: #dddddd;
+}
+.header-right-col {
+  display: flex;
+  justify-content: end;
+}
+.header-top-right {
+  list-style: none;
+}
+.header-top-right li {
+  float: left;
+  margin-left: 15px;
+}
+.header-top-right li a {
+  text-decoration: none;
+  border-left: 1px solid white;
+  color: white;
+  font-size: 13px;
+  padding-left: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-right-col {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+/*---------------------------- HEADER-TOP BURADA BITTI --------------------------- */
+
+.header-bottom {
+  background-color: #ee4054;
+}
+.form-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-location input {
+  width: 100%;
+  position: relative;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+.form-location .search-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ee4054;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 3px;
+}
+.menu-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.menu-ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-ul li .menu-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 8px;
+}
+.menu-ul li .menu-link {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+.menu-ul li .menu-link:hover {
+   transition: all ease-in-out 0.4s;
+  background-color: white;
+  border-radius: 23px;
+  color: black;
+}
+
+.submenu-ul {
+  list-style: none;
+  display: none;
+  width: 180px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10;
+  border-radius: 10px;
+  padding-left: 10px;
+  top: 45px;
+}
+.submenu-ul .submenu-ul-li{
+  padding: 5px 0;
+}
+.submenu-ul .submenu-ul-link{
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu-ul li .menu-link:hover ~ .submenu-ul{
+  display: block;
+}
+.submenu-ul:hover{
+  display: block;
+}
+.menu-icon {
+  display: none;
+}
+.cart-button-col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cart-button:hover .cart-button-link {
+  color: white;
+}
+.cart-button-link {
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  background-color: #56cb60;
+  text-decoration: none;
+  color: white;
+}
+.cart-button-link:hover {
+  text-decoration: none;
+}
+.cartcount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  color: #56cb60;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+.btn-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+/* ----------------------HEADER-BOTTOM BURADA BITTI---------------------- */
+
+.mobile-menu {
+  list-style: none;
+  display: none;
+  align-items: center;
+}
+.mobile-menu li {
+  padding: 10px 0 10px 0;
+}
+.mobile-menu li a {
+  text-decoration: none;
+  color: white;
+  font-family: ubuntu;
+  font-size: 18px;
+  font-weight: 500;
+}
+.mobile-menu li a:hover {
+  color: aquamarine;
+  transition: color 0.4s;
+}
+@media screen and (min-width: 769px) {
+  .mobile-col {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .btn-text {
+    display: none;
+  }
+  .cartcount {
+    position: absolute;
+    top: -5px;
+    left: 53%;
+  }
+  .cart-button-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-location input {
+    width: 52%;
+  }
+  .form-location .search-icon {
+    right: 26%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .logo,
+  .form-location,
+  .header-bottom-right {
+    padding: 10px 0;
+  }
+  .menu-col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .form-location input {
+    width: 100%;
+  }
+  .form-location .search-icon {
+    right: 20px;
+    top: 12px;
+  }
+  .cart-button-col {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cart-button:hover .cart-button-link {
+    color: white;
+  }
+  .cart-button-link {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: end;
+    background-color: #56cb60;
+    text-decoration: none;
+    color: white;
+  }
+  .cart-button-link:hover {
+    text-decoration: none;
+  }
+  .cartcount {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    color: #56cb60;
+    margin: 0 4px;
+    border-radius: 50%;
+  }
+  .btn-text {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-col .menu-ul {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
+  .top-banner-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .btn-text {
+    display: none;
+  }
+  .cartcount {
+    position: absolute;
+    top: -7px;
+    left: 80%;
+  }
+  .cart-button-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 310px) {
+  .btn-text {
+    display: none;
+  }
+  .cartcount {
+    position: absolute;
+    top: -7px;
+    left: 77%;
+  }
+  .cart-button-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 250px) {
+  .btn-text {
+    display: none;
+  }
+  .cartcount {
+    position: absolute;
+    top: -7px;
+    left: 75%;
+  }
+  .cart-button-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* --------------------------------mobile-menu burada bitti--------------------- */
+
+.all-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slider {
+  width: 5200px;
+}
+.slider-item {
+  width: 1255px;
+}
+.slider-item img {
+  width: 1255px;
+  height: 500px;
+}
+.left-button {
+  position: absolute;
+  top: 45%;
+  left: 15px;
+  z-index: 9;
+}
+.right-button {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  z-index: 9;
+}
+.slider-text {
+  margin-left: 100px;
+  margin-top: 150px;
+}
+.slider-text h1 {
+  color: black;
+  font-size: 50px;
+  font-family: ubuntu;
+  font-weight: 600;
+}
+.slider-text p {
+  color: black;
+  font-size: 20px;
+  font-family: ubuntu;
+  margin: 30px 0;
+  line-height: 1.5;
+}
+.slider-text button {
+  background-color: #d73a4d;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+}
+.slider-text button:hover {
+  transition: all 0.4s;
+  background-color: #ee4054;
+}
+@media screen and (max-width: 768px) {
+  .slider-text h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .slider-text p {
+    font-size: 16px;
+  }
+
+  .slider-text {
+    margin-left: 80px;
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .slider-text h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .slider-text p {
+    font-size: 14px;
+  }
+
+  .slider-text {
+    margin-left: 80px;
+    margin-top: 150px;
+  }
+}
+/* -------------------------------------SLIDER burada bitti------------------------------ */
+
+.store-slider-top {
+  display: flex;
+  justify-content: space-between;
+}
+.store-slider-direction {
+  display: flex;
+}
+.store-slider-header-text p {
+  color: #333333;
+  font-size: 20px;
+  font-family: ubuntu;
+  font-weight: 400;
+}
+.store-slider-direction .direction {
+  width: 20px;
+  height: 20px;
+  background-color: #dddddd;
+  position: relative;
+}
+.store-slider-direction .direction i {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  color: white;
+}
+.store-slider-direction .direction:hover {
+  background-color: #d73a4d;
+  transition: all 0.5s;
+}
+.store-slider-direction .left-direction {
+  margin-right: 3px;
+}
+.store-slider-all {
+  position: relative;
+  overflow: hidden;
+}
+.store-slider {
+  display: flex;
+  width: 1793px;
+}
+.store-slider-stage {
+  width: 163px;
+  text-align: center;
+  color: #999999;
+}
+.store-slider-stage a {
+  text-decoration: none;
+}
+.store-slider-stage .store-slider-icon {
+  color: #999999;
+  font-size: 40px;
+  margin: 20px 0;
+}
+.store-slider-stage p {
+  font-size: 16px;
+  font-family: ubuntu;
+  font-weight: 500;
+}
+.store-slider-stage:hover {
+  background-color: #d73a4d;
+}
+.store-slider-stage:hover {
+  color: white;
+  transition: all 0.5s;
+}
+.store-slider-stage:hover .store-slider-icon {
+  color: white;
+}
+
+/* -------------------------STORE SLIDER BURADA BITTI-------------------- */
+
+.images-container img {
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* ----------------------------IMAGES COUNTER BURADA BITTI----------- */
+
+.product-header-text {
+  display: flex;
+  align-items: center;
+}
+.product-header-direction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.product-header-direction a {
+  margin-right: 10px;
+  color: rgb(22, 21, 21);
+  font-size: 16px;
+  font-family: ubuntu;
+  font-weight: 500;
+}
+.product-header-direction .clothing-link,
+.product-header-direction .shoes-link,
+.product-header-direction .electronic-link {
+  text-decoration: none;
+}
+.product-header-direction a:hover {
+  color: #d73a4d;
+  transition: all 0.4s ease-in-out;
+}
+.product-header-direction .product-direction-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+.product-left {
+  margin-right: 5px;
+}
+.product-left,
+.product-right {
+  width: 20px;
+  height: 20px;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-left:hover {
+  background-color: #d73a4d;
+  transition: all 0.4s ease-in;
+}
+.product-right:hover {
+  background-color: #d73a4d;
+  transition: all 0.4s ease-in;
+}
+.product-left i,
+.product-right i {
+  color: white;
+}
+.clothing-slider-row {
+  background-color: #616161;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.electronic-slider-row {
+  background-color: #616161;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.shoes-slider-row {
+  background-color: #616161;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.clothing-sliders {
+  width:2260px;
+  display: flex;
+}
+.shoes-sliders {
+  width: 2260px;
+  display: flex;
+}
+.electronic-sliders {
+  width: 2260px;
+  display: flex;
+}
+.electronic-sliders .clothing-slider{
+  width: 376px;
+  margin: 20px 10px 20px 0;
+  position: relative;
+}
+.clothing-sliders .clothing-slider {
+  width: 376px;
+  margin: 20px 10px 20px 0;
+  position: relative;
+}
+.shoes-sliders .clothing-slider {
+  width: 376px;
+  margin: 20px 10px 20px 0;
+  position: relative;
+}
+.clothing-slider img {
+  width: 100%;
+}
+.clothing-image {
+  position: relative;
+}
+.clothing-percent {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  background-color: #56cb60;
+  padding: 5px;
+  font-size: 13px;
+  color: white;
+  border-radius: 8px;
+}
+.clothing-selling {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  background-color: #dddddd;
+  color: rgb(71, 65, 65);
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 25px;
+}
+.hover-icons {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  display: flex;
+  opacity: 0;
+}
+.hover-icons div {
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d73a4d;
+}
+.hover-icons div i {
+  color: white;
+}
+.clothing-slider:hover .hover-icons {
+  transition: all 0.4s ease;
+  top: 30%;
+  left: 35%;
+  z-index: 6;
+  opacity: 1;
+}
+.clothing-image-text {
+  margin-top: 10px;
+}
+.clothing-image-text .clothing-header {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: ubuntu;
+}
+.star i {
+  color: #ffc808;
+  font-size: 14px;
+}
+.previus-price {
+  color: #535151;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+.current-price {
+  font-size: 15px;
+}
+
+.electronic-sliders{
+  display: none;
+}
+.shoes-sliders{
+  display: none;
+}
+@media screen and (max-width:767px){
+  .clothing-slider{
+    width: 255px;
+  }
+  .shoes-slider{
+    width: 255px;
+  }
+  .electronic-slider{
+    width: 255px;
+  }
+}
+@media screen and (max-width:991px) and (min-width:768px){
+  .clothing-slider{
+    width: 345px;
+  }
+  .shoes-slider{
+    width: 345px;
+  }
+  .electronic-slider{
+    width: 345px;
+  }
+}
+@media screen and (max-width:1199px) and (min-width:991px){
+  .clothing-slider{
+    width: 307px;
+  }
+  .shoes-slider{
+    width: 307px;
+  }
+  .electronic-slider{
+    width: 307px;
+  }
+}
+
+/* ------------------------------------PRODUCT SLIDER BURADA BITTI-------------------- */
+
+
+.countdown-col{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+}
+.countdown-col h2{
+  color: #333333;
+  font-size: 24px;
+  font-family: ubuntu;
+  font-weight: 500;
+
+}
+.countdown-col span{
+  margin-left: 10px;
+}
+
+.days,.hours,.seconds,.minutes{
+  background-color: #d73a4d;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: ubuntu;
+  width: auto;
+  border-radius: 6px;
+}
+
+/* --------------------------------COUNRDOWN BURADA BITTI----------------------------- */
+
+.footer-container{
+  background-color: #ecf0f1;
+  padding-top: 50px;
+}
+.footer-row1 h2{
+  font-size: 19px;
+  font-weight: 400;
+  font-family: ubuntu;
+  color: #333333;
+}
+.footer-row1 ul{
+  margin-top: 20px;
+
+}
+.footer-row1 ul li {
+  color: #535151;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 200;
+  font-family: ubuntu;
+}
+.footer-row1 ul li a{
+  text-decoration: none;
+  color: #535151;
+  font-size: 13px;
+  font-weight: 200;
+  font-family: ubuntu;
+}
+.footer-row2 .bus-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-row2 .bus-col img{
+  margin-right: 10px;
+  width: 140px;
+}
+.bus-col p{
+  margin-left: 20px;
+  font-size: 13px;
+  color: #333333;
+}
+.card-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-col img{
+  width: 60px;
+  height: 40px;
+  margin-right: 5px;
+}
+.social-col span{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.social-col .youtube{
+  background-color: red;
+}
+.social-col .facebook{
+  background-color: blue;
+}
+.social-col .twitter{
+  background-color: rgb(32, 32, 241);
+}
+.social-col .instagram{
+  background-color: rgb(192, 25, 128);
+}
+.social-col .google{
+  background-color: rgb(214, 226, 46);
+}
+.social-col .pinterest{
+  background-color: rgb(226, 89, 9);
+}
+.social-col .linkedin{
+  background-color: rgb(25, 127, 223);
+}
+.social-col span i{
+  color: white;
+}
+.copyright{
+  color: #535151;
+  font-size: 15px;
+}
+
+/* ----------------------------FOOTER BITTI---------------------------- */

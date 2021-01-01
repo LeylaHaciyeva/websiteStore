@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.wishlist-section{
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+.wishlist{
+    background-color: white;
+    padding: 40px 0 40px 30px;
+    box-shadow: 0 1px 2px #bbb;
+    border-radius: 5px;
+}
+.wishlist h3{
+    color: #222222;
+    font-size: 30px;
+    font-family: ubuntu;
+    font-weight: 500;
+}
+.wishlist p{
+    color: #414040;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: ubuntu;
+}
+.wishlist button:hover{
+    background-color: #222222;
+    border-color: #222222;
+}

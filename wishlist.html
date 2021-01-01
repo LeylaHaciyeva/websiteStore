@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid pt-3 pl-5 pr-5 header-top">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 col-sm-12 col-12">
+                    <ul class="header-top-left">
+                        <li class="money">
+                            <a class="money-link" style="display: flex; justify-content:center; align-items:center;"
+                                href="#">
+                                <span>USD</span><i class="fas fa-caret-down"></i>
+                            </a>
+                            <ul class="money-ul">
+                                <li><a href="#"><span>USD</span></a></li>
+                                <li><a href="#"><span>INR</span></a></li>
+                                <li><a href="#"><span>GBR</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="lang-link" style="display: flex; justify-content:center; align-items:center;"
+                                href="#">
+                                <span>English</span><i class="fas fa-caret-down"></i>
+                            </a>
+                            <ul class="lang-ul">
+                                <li><a href=""><span>English</span></a></li>
+                                <li><a href=""><span>Russian</span></a></li>
+                                <li><a href=""><span>German</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-md-9 col-sm-12 col-12 header-right-col">
+                    <ul class="header-top-right">
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="wishlist.html">WishList </a></li>
+                        <li><a href="account.html">My Account </a></li>
+                        <li><a href="contact.html">Contact </a></li>
+                        <li><a href="vendor.html">Become a Vendor </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid pl-5 pr-5  header-bottom">
+            <div class="row pt-3">
+                <div class="col-lg-2 col-md-12">
+                    <div class="logo text-center">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="form-location">
+                        <input type="text" placeholder="Search">
+                        <div class="search-icon"><i class="fas fa-search"></i></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="row header-bottom-right">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 menu-col">
+                            <ul class="menu-ul">
+                                <li>
+                                    <a class="menu-link" href="#">Deals</a>
+                                    <ul class="submenu-ul">
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="#">Grid View</a></li>
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="#">Deals Detail</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Coupons</a>
+                                    <ul class="submenu-ul">
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="#">Grid View</a></li>
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="#">Grid Sidebar</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Stores</a>
+                                    <ul class="submenu-ul">
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="#">Stores Details</a>
+                                        </li>
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="#">Stores Grid</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Pages</a>
+                                    <ul class="submenu-ul">
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="home.html">Home</a>
+                                        </li>
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="account.html">My
+                                                Account</a>
+                                        </li>
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="vendor.html">Vendor
+                                                Registration</a></li>
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link" href="contact.html">Contact
+                                                Us</a>
+                                        </li>
+                                        <li class="submenu-ul-li"><a class="submenu-ul-link"
+                                                href="wishlist.html">Wishlist</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 cart-button-col">
+                            <div class="cart-button">
+                                <a class="cart-button-link" href="">
+                                    <div class="shopping-cart-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="cartcount">
+                                        <span>0</span>
+                                    </div>
+                                    <div class="btn-text">
+                                        <span>My Cart</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mobile-col">
+                    <ul class="mobile-menu">
+                        <li>
+                            <a href="">Deals</a>
+                        </li>
+                        <li>
+                            <a href="">Coupons</a>
+                        </li>
+                        <li>
+                            <a href="">Stores</a>
+                        </li>
+                        <li>
+                            <a href="">Pages</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="wishlist-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="wishlist">
+                    <h3>Default wishlist</h3>
+                    <p>Your Wishlist is currently empty.</p>
+                    <button class="btn btn-danger">RETURN TO SHOP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid footer-container">
+            <div class="container">
+                <div class="row footer-row1">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <h2>
+                            Help and Support
+                        </h2>
+                        <ul>
+                            <li><a href="">Term of Use</a></li>
+                            <li><a href="">Search Terms</a></li>
+                            <li><a href="">Store Location</a></li>
+                            <li><a href="">Orders and Returns</a></li>
+                            <li><a href="">Deliveries</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <h2>
+                            Customer Service
+                        </h2>
+                        <ul>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Order History</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Specials</a></li>
+                            <li><a href="">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <h2>
+                            Corporation
+                        </h2>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Customer Services</a></li>
+                            <li><a href="">Company</a></li>
+                            <li><a href="">Investor Relations</a></li>
+                            <li><a href="">Advanced Search</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <h2>
+                            Why Choose Us
+                        </h2>
+                        <ul>
+                            <li><a href="">Shopping Guide</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Company</a></li>
+                            <li><a href="">Invenstor Relations</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer-row2 mt-5 pt-5">
+                    <div class="col-lg-7 col-md-7 mt-5 bus-col">
+                        <img src="images/bus.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi harum, quaerat velit rerum
+                        </p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 mt-5 card-col">
+                        <img src="images/paybal.png" alt="">
+                        <img src="images/express.png" alt="">
+                        <img src="images/mastercard.png" alt="">
+                        <img src="images/visa.png" alt="">
+
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12 d-flex align-items-center justify-content-center social-col">
+                        <span class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </span>
+                        <span class="facebook">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                        <span class="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                        <span class="google">
+                            <i class="fab fa-google"></i>
+                        </span>
+                    </div>
+                    <div class="col-lg-12 mt-3 d-flex align-items-center justify-content-center">
+                        <p class="copyright">Copyright 2020.KlbTheme.All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

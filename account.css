@@ -1,0 +1,45 @@
+.account-container-fluid{
+    background-color: #ecf0f1;
+}
+.account-container{
+    background-color: white;
+    padding-top: 20px;
+}
+.login-col h2{
+    color: #242424;
+    font-size: 30px;
+    font-family: ubuntu;
+    padding-top: 10px;
+    font-weight: 500;
+}
+.login-col div{
+    margin-bottom: 20px;
+}
+.login-col input[type=text]{
+    border: 1px solid #aca8a8;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+}
+
+
+
+.register-col h2{
+    color: #242424;
+    font-size: 30px;
+    padding-top: 10px;
+    font-family: ubuntu;
+    font-weight: 500;
+}
+.register-col div{
+    margin-bottom: 20px;
+}
+.register-col input[type=text]{
+    border: 1px solid #aca8a8;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+}
+.register-col p{
+    padding-top: 10px;
+}
